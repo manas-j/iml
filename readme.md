@@ -80,6 +80,3 @@ To effectively understand the SHAP values, various plots are used:
 ## References
 - SHAP GitHub repository: [https://github.com/shap/shap](https://github.com/shap/shap)
 - Scikit-learn documentation: [https://scikit-learn.org/stable/](https://scikit-learn.org/stable/)
-
-### Notes
-This project is part of an assignment for an interpretable machine learning course, emphasizing the importance of understanding model behavior and the impact of individual features on predictions.
