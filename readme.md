@@ -1,6 +1,8 @@
-# SVM with RBF Kernel for Customer Churn Prediction
+# IML Assignments
 
-This project focuses on predicting customer churn using Support Vector Machines (SVM) with an RBF (Radial Basis Function) kernel, followed by model interpretability using SHAP (SHapley Additive exPlanations). The dataset used in this project contains customer information such as age, gender, subscription type, and churn status.
+### Assignment 1: SVM with RBF Kernel for Customer Churn Prediction
+
+Team 7 - Manas Jha (21MA25001), Jayant Parakh (21EE10008), and Aayush Patil (21EE10051).
 
 ## Project Summary
 
@@ -35,9 +37,7 @@ The SVM aims to find an optimal hyperplane that separates the data points into d
 
 ### 5. Model Training and Evaluation
 - The SVM model with an RBF kernel was trained using the training dataset.
-- The model was evaluated using a validation set, and a classification report was generated to assess the model's performance.
-
-The classification report includes metrics like precision, recall, and F1-score, providing insight into the model's performance in predicting churn.
+- The model was evaluated using a validation set.
 
 ### 6. Model Interpretability with SHAP
 To understand the model's predictions, we use SHAP (SHapley Additive exPlanations), a popular tool for model interpretability.
@@ -68,9 +68,8 @@ To effectively understand the SHAP values, various plots are used:
 - **Dependence Plot**: Shows how the value of a feature affects the model's output.
 
 #### Placeholder for SHAP Images
-- **Summary Plot**: ![Summary Plot](images/summary_plot.png)
-- **Force Plot for a Single Prediction**: ![Force Plot](images/force_plot.png)
-- **Dependence Plot**: ![Dependence Plot](images/dependence_plot.png)
+- **Summary Plot**: ![Summary Plot](/assignment%201/plots/shap_average.png)
+- **Force Plot for a Single Prediction**: ![Force Plot](/assignment%201/plots/force_plot.png)
 
 ### 8. Conclusion
 - The SVM model with an RBF kernel was successfully used to predict customer churn.
