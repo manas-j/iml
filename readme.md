@@ -69,9 +69,9 @@ To effectively understand the SHAP values, various plots are used:
 
 #### Placeholder for SHAP Images
 - **Summary Plot**:
-![Summary Plot](/assignment%201/plots/shap_average.png)
+- ![Summary Plot](/assignment%201/plots/shap_average.png)
 - **Force Plot for a Single Prediction**:
-![Force Plot](/assignment%201/plots/force_plot.png)
+- ![Force Plot](/assignment%201/plots/force_plot.png)
 
 ### 8. Conclusion
 - The SVM model with an RBF kernel was successfully used to predict customer churn.
