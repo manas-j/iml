@@ -24,14 +24,14 @@ Support Vector Machines (SVM) is a supervised machine learning algorithm used fo
 #### RBF Kernel
 The RBF kernel is a popular choice for SVM as it can handle non-linear relationships by mapping the input features into a higher-dimensional space. The RBF kernel is defined as follows:
 
-\[
+$$\[
 K(x, x') = \exp\left(-\gamma \cdot \lVert x - x' \rVert^2\right)
-\]
+\]$$
 
 Where:
-- \( K(x, x') \) is the kernel function.
-- \( \gamma \) is a parameter that defines how far the influence of a single training example reaches.
-- \( \lVert x - x' \rVert^2 \) is the squared Euclidean distance between two feature vectors.
+- $\( K(x, x') \)$ is the kernel function.
+- $\( \gamma \)$ is a parameter that defines how far the influence of a single training example reaches.
+- $\( \lVert x - x' \rVert^2 \)$ is the squared Euclidean distance between two feature vectors.
 
 The SVM aims to find an optimal hyperplane that separates the data points into different classes while maximizing the margin between them.
 
@@ -45,17 +45,17 @@ To understand the model's predictions, we use SHAP (SHapley Additive exPlanation
 #### SHAP Explanation
 SHAP values provide an explanation for each prediction made by the model by assigning an importance value to each feature. The SHAP value represents the contribution of each feature towards the prediction of a particular instance. SHAP values are based on game theory and use the concept of Shapley values to fairly distribute the contribution of each feature.
 
-The SHAP value for a feature \( i \) is defined as:
+The SHAP value for a feature $\( i \)$ is defined as:
 
-\[
+$$\[
 \phi_i = \sum_{S \subseteq N \setminus \{i\}} \frac{|S|! (|N| - |S| - 1)!}{|N|!} \left( f(S \cup \{i\}) - f(S) \right)
-\]
+\]$$
 
 Where:
-- \( \phi_i \) is the SHAP value for feature \( i \).
-- \( N \) is the set of all features.
-- \( S \) is a subset of features excluding feature \( i \).
-- \( f(S) \) is the model's prediction using features in subset \( S \).
+- $\( \phi_i \)$ is the SHAP value for feature $\( i \)$.
+- $\( N \)$ is the set of all features.
+- $\( S \)$ is a subset of features excluding feature $\( i \)$.
+- $\( f(S) \)$ is the model's prediction using features in subset $\( S \)$.
 
 SHAP provides both global and local interpretability:
 - **Global Interpretability**: Understanding the overall impact of each feature on the model.
